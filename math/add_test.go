@@ -2,23 +2,22 @@ package math
 
 import (
 	algmath "github.com/TheAlgorithms/Go/math"
-	stdmath "math"
 	"testing"
 )
 
 func TestAdd(t *testing.T) {
-	// Test cases
-	tests := []struct {
-		a, b     int
-		expected int
-	}{
-		{5, 3, 8},
-		{-2, 7, 5},
-		{0, 0, 0},
-		{10, -5, 5},
-	}
+    // Test cases
+    tests := []struct {
+        a, b     int
+        expected int
+    }{
+        {5, 3, 8},
+        {-2, 7, 5},
+        {0, 0, 0},
+        {10, -5, 5},
+    }
 
-	// Iterate over the test cases
+    // Iterate over the test cases
     for _, test := range tests {
         result := math.Add(test.a, test.b)
         if result != test.expected {
