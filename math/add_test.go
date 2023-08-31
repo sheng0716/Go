@@ -19,10 +19,10 @@ func TestAdd(t *testing.T) {
 	}
 
 	// Iterate over the test cases
-	for _, test := range tests {
-		result := algmath.add(test.a, test.b)
-		if result != test.expected {
-			t.Errorf("For %d + %d, expected %d, but got %d", test.a, test.b, test.expected, result)
-		}
-	}
+    for _, test := range tests {
+        result := math.Add(test.a, test.b)
+        if result != test.expected {
+            t.Errorf("For %d + %d, expected %d, but got %d", test.a, test.b, test.expected, result)
+        }
+    }
 }
