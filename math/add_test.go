@@ -1,4 +1,4 @@
-package math_test
+package math
 
 import (
 	algmath "github.com/TheAlgorithms/Go/math"
@@ -20,7 +20,7 @@ func TestAdd(t *testing.T) {
 
 	// Iterate over the test cases
 	for _, test := range tests {
-		result := add(test.a, test.b)
+		result := algmath.add(test.a, test.b)
 		if result != test.expected {
 			t.Errorf("For %d + %d, expected %d, but got %d", test.a, test.b, test.expected, result)
 		}
