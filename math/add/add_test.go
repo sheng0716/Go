@@ -1,6 +1,9 @@
 package add
 
-import "testing"
+import (
+    "testing"
+    github.com/TheAlgorithms/Go/math/add.test
+)
 
 func TestAdd(t *testing.T) {
     // Test cases
