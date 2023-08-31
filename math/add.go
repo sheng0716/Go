@@ -1,6 +1,6 @@
 package math
 
-// Function to calculate the sum of two integers
-func add(a, b int) int {
+// Add takes two integers and returns their sum.
+func Add(a, b int) int {
     return a + b
 }
